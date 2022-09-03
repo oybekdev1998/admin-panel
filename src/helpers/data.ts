@@ -28,7 +28,7 @@ export const data = [
   },
   {
     name: 'Jul',
-    "Active User": 3490
+    "Active User": 3900
   },
   {
     name: 'Avg',

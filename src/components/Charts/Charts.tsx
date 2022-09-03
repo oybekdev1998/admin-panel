@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, CartesianGrid} from 'recharts';
 import {data} from "../../helpers/data";
 import styles from './Charts.module.css'
 
@@ -15,7 +15,7 @@ const Charts = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-
+                <CartesianGrid stroke="#e0defd" strokeDasharray="5 5"/>
                 <Line type="monotone" dataKey="Month" stroke="#82ca9d" />
               </LineChart>
             </ResponsiveContainer>
