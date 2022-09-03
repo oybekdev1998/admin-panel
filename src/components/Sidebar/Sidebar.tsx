@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FC} from 'react'
 import styles from './Sidebar.module.css'
 import {
   AttachMoney, Email, Equalizer, Feedback,
@@ -8,7 +8,7 @@ import {
   Timeline,
   TrendingUp,
 } from '@mui/icons-material';
-const Sidebar = () => {
+const Sidebar: FC = () => {
   return (
    <div className={styles.sidebar}>
     <div className={styles.sidebarWrapper}>
