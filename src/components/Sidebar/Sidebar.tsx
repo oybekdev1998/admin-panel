@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './Sidebar.module.css'
 import {
-  AttachMoney, Equalizer,
-  LineStyle,
-  Person,
+  AttachMoney, Email, Equalizer, Feedback,
+  LineStyle, ManageAccounts, MessageSharp,
+  Person, Report,
   Storefront,
   Timeline,
   TrendingUp,
@@ -54,16 +54,16 @@ const Sidebar = () => {
         <div className={styles.sidebarTitle}>Notifications</div>
         <ul className={styles.sidebarList}>
           <li className={styles.sidebarListItem}>
-            <LineStyle className={styles.listItemIcon} />
-            Home
+            <Email className={styles.listItemIcon} />
+            Mail
           </li>
           <li className={styles.sidebarListItem}>
-            <Timeline className={styles.listItemIcon} />
-            Analytics
+            <Feedback className={styles.listItemIcon} />
+            Feedback
           </li>
           <li className={styles.sidebarListItem}>
-            <TrendingUp className={styles.listItemIcon} />
-            Sales
+            <MessageSharp className={styles.listItemIcon} />
+            Messages
           </li>
         </ul>
       </div>
@@ -71,16 +71,16 @@ const Sidebar = () => {
         <div className={styles.sidebarTitle}>Staff</div>
         <ul className={styles.sidebarList}>
           <li className={styles.sidebarListItem}>
-            <LineStyle className={styles.listItemIcon} />
-            Home
+            <ManageAccounts className={styles.listItemIcon} />
+            Manage
           </li>
           <li className={styles.sidebarListItem}>
             <Timeline className={styles.listItemIcon} />
             Analytics
           </li>
           <li className={styles.sidebarListItem}>
-            <TrendingUp className={styles.listItemIcon} />
-            Sales
+            <Report className={styles.listItemIcon} />
+            Reports
           </li>
         </ul>
       </div>
