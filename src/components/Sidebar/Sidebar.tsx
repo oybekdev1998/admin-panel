@@ -8,6 +8,7 @@ import {
   Timeline,
   TrendingUp,
 } from '@mui/icons-material';
+import {Link} from "react-router-dom";
 const Sidebar: FC = () => {
   return (
    <div className={styles.sidebar}>
@@ -15,10 +16,10 @@ const Sidebar: FC = () => {
       <div className={styles.sidebarMenu}>
         <div className={styles.sidebarTitle}>Dashboard</div>
         <ul className={styles.sidebarList}>
-          <li className={styles.sidebarListItem}>
+          <Link to='/' className={styles.sidebarListItem}>
             <LineStyle className={styles.listItemIcon} />
             Home
-          </li>
+          </Link>
           <li className={styles.sidebarListItem}>
             <Timeline className={styles.listItemIcon} />
             Analytics
@@ -32,10 +33,10 @@ const Sidebar: FC = () => {
       <div className={styles.sidebarMenu}>
         <div className={styles.sidebarTitle}>Quick Menu</div>
         <ul className={styles.sidebarList}>
-          <li className={styles.sidebarListItem}>
+          <Link to='/userList' className={styles.sidebarListItem}>
             <Person className={styles.listItemIcon} />
             Users
-          </li>
+          </Link>
           <li className={styles.sidebarListItem}>
             <Storefront className={styles.listItemIcon} />
             Products
