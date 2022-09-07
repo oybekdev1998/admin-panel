@@ -1,0 +1,96 @@
+.user {
+    padding: 20px;
+    flex: 4;
+}
+
+.userTitleContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userTitle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.userCreateBtn {
+    width: 80px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+}
+
+.userContainer {
+    margin-top: 20px;
+    display: flex;
+}
+
+.userShow {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 4px 26px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 5px 4px 26px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 5px 4px 26px 0 rgba(34, 60, 80, 0.2);
+
+}
+
+.userUpdate {
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 4px 26px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 5px 4px 26px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 5px 4px 26px 0 rgba(34, 60, 80, 0.2);
+}
+
+.userShowTop {
+    display: flex;
+    align-items: center;
+}
+
+.userShowTopImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.userShowTopName {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.userShowTopJob {
+  font-weight: 300;
+}
+.userShowTopTitle {
+    display: flex;
+    flex-direction: column;
+}
+.userShowBottom {
+  margin-top: 20px;
+}
+.userShowTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: lightgray;
+}
+
+.userShowInfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #444;
+}
+
+.userShowInfoIcon {
+  margin-right: 10px;
+}
