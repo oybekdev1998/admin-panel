@@ -1,10 +1,12 @@
 import React from 'react';
 import Topbar from "./components/Topbar/Topbar";
 import Sidebar from "./components/Sidebar/Sidebar";
-import styles from './App.module.css'
 import Home from "./pages/Home/Home";
 import {Route, Routes,} from "react-router-dom";
 import UserList from "./pages/UserList/UserList";
+import User from "./pages/user/User";
+
+import styles from './App.module.css'
 
 function App() {
     return (
@@ -15,6 +17,7 @@ function App() {
           <Routes>
             <Route  path={'/'}  element={<Home />} />
             <Route path={'/userList'} element={<UserList />} />
+            <Route path={'/user/:userId'} element={<User /> } />
           </Routes>
 
         </div>
