@@ -43,7 +43,7 @@ function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={'/user/' + params.row.id}>
+            <Link to={'/User/' + params.row.id}>
               <button className={styles.userListBtn}>Edit</button>
             </Link>
             <DeleteOutline className={styles.userListDelete} onClick={() => handleClick(params.row.id)} />
@@ -66,10 +66,5 @@ function UserList() {
     </div>
   );
 }
-
-
-
-
-
 
 export default UserList;
