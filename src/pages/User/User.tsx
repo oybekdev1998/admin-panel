@@ -6,15 +6,18 @@ import {
   LocalActivityOutlined,
   LocationSearching,
   PermIdentity,
-  PhoneAndroid
+  PhoneAndroid, Publish
 } from "@mui/icons-material";
+import {Link} from "react-router-dom";
 
 const User: React.FC = () => {
   return (
     <div className={styles.user}>
       <div className={styles.userTitleContainer}>
         <div className={styles.userTitle}>Edit User</div>
-        <button className={styles.userCreateBtn}>Create</button>
+        <Link to='/newUser'>
+          <button className={styles.userCreateBtn}>Create</button>
+        </Link>
       </div>
       <div className={styles.userContainer}>
         <div className={styles.userShow}>
@@ -56,7 +59,7 @@ const User: React.FC = () => {
 
         </div>
         <div className={styles.userUpdate}>
-          <span className={styles.userUpdateTitle} >Update</span>
+          <span className={styles.userUpdateTitle} >Edit</span>
           <form className={styles.userUpdateForm}>
             <div className={styles.userUpdateLeft}>
               <div className={styles.userUpdateItem}>
@@ -68,7 +71,7 @@ const User: React.FC = () => {
                 />
               </div>
               <div className={styles.userUpdateItem}>
-                <label>Fullname</label>
+                <label>Full name</label>
                 <input
                   type="text"
                   placeholder="Dua Lupa"
@@ -100,7 +103,14 @@ const User: React.FC = () => {
                 />
               </div>
             </div>
-            <div className={styles.userUpdateRight}></div>
+            <div className={styles.userUpdateRight}>
+              <div className={styles.userUpdateUpload}>
+                <img className={styles.userUpdateImg} src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JAfSaC28z85h3sLnb0IFaR9T0DbOhrwqQA&usqp=CAU'} alt='Upload img' />
+                <label htmlFor='file'><Publish className={styles.userUpdateIcon} /> </label>
+                <input type='file' id='file' style={{display: 'none'}}/>
+              </div>
+              <button className={styles.userUpdateBtn}>Update</button>
+            </div>
           </form>
         </div>
       </div>
