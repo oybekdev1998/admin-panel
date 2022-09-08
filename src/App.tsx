@@ -4,7 +4,8 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
 import {Route, Routes,} from "react-router-dom";
 import UserList from "./pages/UserList/UserList";
-import User from "./pages/user/User";
+import User from "./pages/User/User";
+import NewUser from "./pages/NewUser/NewUser";
 
 import styles from './App.module.css'
 
@@ -17,7 +18,8 @@ function App() {
           <Routes>
             <Route  path={'/'}  element={<Home />} />
             <Route path={'/userList'} element={<UserList />} />
-            <Route path={'/user/:userId'} element={<User /> } />
+            <Route path={'/User/:userId'} element={<User /> } />
+            <Route path={'/newUser'} element={<NewUser />}/>
           </Routes>
 
         </div>

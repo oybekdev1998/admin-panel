@@ -37,10 +37,10 @@ const Sidebar: FC = () => {
             <Person className={styles.listItemIcon} />
             Users
           </Link>
-          <li className={styles.sidebarListItem}>
+          <Link to='/products' className={styles.sidebarListItem}>
             <Storefront className={styles.listItemIcon} />
             Products
-          </li>
+          </Link>
           <li className={styles.sidebarListItem}>
             <AttachMoney className={styles.listItemIcon} />
             Transactions
