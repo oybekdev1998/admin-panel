@@ -1,9 +1,15 @@
 import React, {FC} from 'react'
 import styles from './Sidebar.module.css'
 import {
-  AttachMoney, Email, Equalizer, Feedback,
-  LineStyle, ManageAccounts, MessageSharp,
-  Person, Report,
+  AttachMoney,
+  Email,
+  Equalizer,
+  Feedback,
+  LineStyle,
+  ManageAccounts,
+  MessageSharp,
+  Person,
+  Report,
   Storefront,
   Timeline,
   TrendingUp,
